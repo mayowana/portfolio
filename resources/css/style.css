@@ -1,0 +1,479 @@
+/* --------------------------------
+
+Colors
+Wana Marley text - #9F9F9F
+Wana Marley background - #161616
+Button color - #c0392b
+Hover color - #7b241b
+
+/* ------------- General Information part ---------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Raleway';
+	font-size: 18px;
+	color: white;
+	border: none;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	scroll-padding: 50px;
+}
+
+.row {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 50px 0;
+}
+
+/* ---------------- HOMEPAGE SECTION STARTS ----------------- */
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/wallpaper1.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 400%;
+	font-weight: 300;
+}
+
+.homepagetext {
+	position: absolute;
+	width: 1300px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.homebutton:link,
+.homebutton:visited {
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	background-color: #c0392b;
+	border-radius: 200px;
+	color: #fff;
+	font-weight: 500;
+	transition: background-color 1s;
+}
+
+.homebutton:hover {
+	-webkit-animation-duration: 3s;
+  	animation-duration: 3s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+  	-webkit-animation-name: pulse;
+ 	 animation-name: pulse;
+	background-color: #7b241b;
+}
+
+.logo {
+	height: 75px;
+	width: auto;
+}
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 45px;
+	padding: 10px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+ {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 3px solid #c0392b;
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #FFE9E6;
+}
+/* ----------------- HOMEPAGE SECTION ENDS HERE ---------------- */
+
+/* ----------------- ABOUT ME SECTION STARTS HERE -------------------- */
+
+.aboutme {
+	background-image: linear-gradient(to right, #FFE9E6, #BF3C2A);
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 200%;
+	font-weight: 500;
+	color: #171717;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #171717;
+	content: " ";
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.aboutmeheader {
+	text-align: center;
+}
+
+.aboutmeimage {
+	text-align: center;
+	size: 50%;
+}
+
+.logo-about {
+	max-height: 400px;
+}
+
+.aboutmetext {
+	text-align: center;
+	line-height: 145%;
+	width: 35%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	font-size: 125%;
+	color: #171717;
+}
+
+.skills {
+	text-align: center;
+	color: black;
+}
+
+.pitch {
+	margin-bottom: 40px;
+}
+
+.cube {
+	padding: 1%;
+	color: #171717;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+.cube p {
+	width: 75%
+	text-align: center;
+	color: #171717;
+}
+
+.cube ion-icon {
+	font-size: 550%;
+	fill: #171717;
+	transition: fill 0.5s;
+	
+}
+
+.logo-facebook:hover {
+	fill: #3b5998;
+}
+
+.logo-twitter:hover {
+	fill: #1da1f2;
+}
+
+.logo-instagram:hover {
+	fill: #e1306c;
+}
+
+.logo-linkedin:hover {
+	fill: #2867b2;
+}
+
+/* ----------------- ABOUT ME SECTION ENDS HERE -------------------- */
+
+/*------------------ PROJECTS SECTION STARTS HERE -------------------*/
+
+.projects {
+	padding: 0;
+	background-color: black;
+	max-height: 70vh;
+}
+
+.projecthead h3 {
+	background-color: black;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 250%;
+}
+
+.projectgrid {
+	list-style: none;
+	width: 100%;
+	display: block;
+}
+
+.projectheader {
+	background-color: #171717;
+	text-align: center;
+}
+
+.projectgrid li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.projectphoto {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+.projectphoto img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+	transition: transform 0.5s;
+	transition: opacity 0.5s;
+}
+
+.projectphoto img:hover {
+	transform: scale(1.1);
+	opacity: 2;
+}
+
+.hovertext a {
+	text-decoration: none;
+	background-color: #C0392B;
+	color: white;
+	padding: 15px 30px;
+	border-radius: 200px;
+}
+
+.hovertext{
+	position: absolute;
+	padding-top: 45%;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+  	text-align: center;
+  	background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.projectphoto:hover .hovertext{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+/*----------------- PROJECTS SECTION ENDS HERE ----------------------*/
+
+/*----------------- TESTIMONIALS SECTION STARTS HERE ----------------------*/
+
+.testimonials {
+	margin: 0 auto;
+	background-image: linear-gradient(to right, #FFE9E6, #BF3C2A);
+	padding: 0;
+	min-height: 60vh;
+}
+
+.slideshow-container {
+  position: relative;
+  background: black;
+}
+
+.blank {
+	/* background-image: linear-gradient(to right, #FFE9E6, #BF3C2A); */
+	background-color: black;
+}
+
+.testimonhead h3 {
+	padding-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 250%;
+	color: #171717;
+}
+
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 170%;
+	position: relative;
+	font-size: 100%;
+	margin-top: 30px;
+	color: #171717;
+}
+
+blockquote:before {
+	content: '\201C';
+	font-size: 600%;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+cite {
+	font-size: 90%;
+	margin-top: 25px;
+	display: block;
+}
+
+cite img {
+	height: 100px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/*----------------- TESTIMONIALS SECTION ENDS HERE ----------------------*/
+
+/*----------------- CONTACT US STARTS HERE ----------------------*/
+
+.contactform {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/wallpaper2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.formfield {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.contacthead h3 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 250%;
+	color: #FFE8E6;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: #c0392b;
+	border-radius: 100px;
+	color: #fff;
+	font-weight: 500;
+	transition: background-color 1s;
+}
+
+input[type=submit]:hover {
+	background-color: #7b241b;
+}
+
+.submitbutton {
+	text-align: center;
+	padding: 15px; 
+}
+/*----------------- CONTACT US ENDS HERE ----------------------*/
+
+/*----------------- FOOTER STARTS HERE ----------------------*/
+
+footer {
+	background-image: linear-gradient(to right, #FFE9E6, #BF3C2A);
+}
+
+.social-links {
+	list-style: none;
+	float: right;
+	display: inline-block;
+}
+
+.social-links ion-icon {
+	font-size: 200%;
+	fill: #171717;
+}
+
+ion-icon:hover {
+	fill: #98A3B3;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.foot-text p {
+	color: #171717;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.footer-div {
+	padding-top: 50px;
+}
+
+ion-icon:hover {
+	fill: #98A3B3;
+}
+
+footer-image {
+	max-height: 50px;
+}
+/*----------------- FOOTER ENDS HERE ----------------------*/

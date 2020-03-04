@@ -103,6 +103,11 @@ cite img {
 	vertical-align: middle;
 	float: none;
 	}
+	
+	
+	.hovertext { 
+		display: none;
+	}
 
 	.social-links {
 		float: none;
